@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center
+}
+
+.caja {
+    height: 50%;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.categoria {
+    background-color: black;
+    color: #ffff;
+    padding: 5px;
+    border-radius: 10px;
+}
