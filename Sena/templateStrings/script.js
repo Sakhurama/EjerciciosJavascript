@@ -1,18 +1,25 @@
-let nombre = "Daniel"
-let poema = `
-Hay un bello ser
-llamado ${nombre},
-Él es lo más hermoso
-y por eso es ${nombre}
 
-...
 
-Tal vez existan muchos ${nombre}es
-pero ninguno es como el ${nombre}
-que yo conozco.
-`
+function crearPoema(){
+    const nombre = document.getElementById("nombre").value;
+    const lugarDelPoema = document.getElementById("poema")
+    let poema = `
+    Hay un bello ser
+    llamado ${nombre},
+    Él es lo más hermoso
+    y por eso es ${nombre}
 
-console.log(poema)
+    ...
+
+    Tal vez existan muchos ${nombre}es
+    pero ninguno es como el ${nombre}
+    que yo conozco.
+    `;
+
+// Reemplaza los saltos de línea (\n) con <br> y asigna el HTML resultante
+    lugarDelPoema.innerHTML = poema.replace(/\n/g, '<br>');
+}
+
 
 // ------ PROPIEDADES -----
 
