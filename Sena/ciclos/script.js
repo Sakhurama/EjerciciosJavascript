@@ -59,6 +59,7 @@ do {
 */
 
 let amigos = ["Daniel" , "Juan", "Felipe" , "Anny"];
+
 for (const nombres of amigos){
     console.log("Uno de mis amigos es: " + nombres);
 }
